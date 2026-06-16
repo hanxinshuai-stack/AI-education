@@ -19,7 +19,8 @@ function HeaderNav({ menuItems }: { menuItems: MenuProps["items"] }) {
   return (
     <nav className="flex flex-1 flex-wrap items-center justify-center gap-x-6 gap-y-1 px-4">
       {menuItems?.map((item) => {
-        if (!item || !("key" in item) || !item.key) return null;
+        if (!item || item.type === "divider" || !("key" in item) || !item.key) return null;
+        if (!("label" in item)) return null;
         return (
           <div
             key={String(item.key)}
