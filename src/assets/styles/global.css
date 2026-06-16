@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "PingFang SC", "SF Pro Display", "Inter", "Microsoft YaHei", system-ui, sans-serif;
+  color: #1a1a2e;
+  background-color: #f5f4ef;
+  --brand-primary: #2996FF;
+  --brand-primary-light: #E8F3FF;
+  --brand-secondary: #6EE7A4;
+  --brand-secondary-light: #EAFBF2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f5f4ef;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.safe-card {
+  border: 1px solid #e8e5df;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: none;
+}
+
+.safe-card:hover {
+  border-color: #d6d0c5;
+}
